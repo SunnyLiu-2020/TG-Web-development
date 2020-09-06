@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onderdeel 1 - HTML Intro</title>
+</head>
+
+<body>
+    <h1>Onderdeel 1 - HTML Intro</h1>
+
+    <h2>Intro</h2>
+
+    <h4>1. Wat is het verschil tussen het internet en het world wide web?</h4>
+
+    <p>Een zoektocht op het internet geeft veel opsommingen van verschillen tussen de twee, maar het simpele antwoord
+        luidt dat WWW een onderdeel is van het internet. Het internet is groter dan WWW en omvat onder meer usenet en
+        darnet, die geen deel zijn van het WWW.</p>
+
+    <h4>2. Wat is het verschil tussen HTML, CSS en JavaScript?</h4>
+
+    <p>HTML: content and structure</p>
+    <p>CSS: style</p>
+    <p>JavaScript: interaction</p>
+
+    <h4>3. Wat is een HTML tag en een HTML element? Hoe open je een HTML tag en hoe sluit
+        je een HTML tag. Maak hiervoor voorbeelden en leg uit.</h4>
+
+    <p>Een HTML-tag definieert de opmaak van een document. <span>&#60;b&#62; &#60;/b&#62; &#60;i&#62;
+            &#60;/i&#62;</span> zijn voorbeelden van opening en closing tags. Ze worden altijd omgeven door punthaken en
+        de forward slash geeft een closing tag aan.</p>
+
+    <h4>4. HTML gebruikt basis tags om structuur op te bouwen. De <span>&#60;html&#62;, &#60;head&#62; en
+            &#60;body&#62;</span>.
+        Geef voor elke element aan waarvoor het dient.</h4>
+
+    <p>html: geeft aan dat het een html-document betreft.</p>
+    <p>head: bevat data over het document die niet weergegeven wordt</p>
+    <p>body: bevat alle inhoud van de webpagina</p>
+
+    <h4>5. Op HTML elementen kun je attributen gebruiken. Wat zijn HTML attributen ? Geef
+        minimaal 5 attributen en maak voorbeelden waar je de attributen in toepast.</h4>
+
+    <p>href: in hyperlinks</p>
+    <p>src: bij images</p>
+    <p>alt: bij images</p>
+    <p>width: om de breedte aan te geven</p>
+    <p>height: om de hoogte aan te geven</p>
+
+    <h4>6. Waarom is een goede HTML Structuur belangrijk? Is deze code een goede structuur?
+        Leg uit.</h4>
+
+    <p>Een goede HTML-structuur brengt order aan in een webpagina. Het maakt het ook makkelijker voor CSS styling en het
+        inlezen door screenreaders en browsers voor slechtzienden.</p>
+    <p>Deze code is niet goed, want de body bestaat uit één grote lap tekst zonder enige structuur. Alle tekst zal
+        achter elkaar geplaatst worden.</p>
+
+    <h4>7. Wat is het verschil tussen inline en block elementen?</h4>
+
+    <p>inline: neemt zoveel ruimte in als nodig is en niet meer dan dat</p>
+    <p>block: beslaat de volledige breedte van de browser van uiterst links tot en met uiterst rechts</p>
+
+    <h4>8. Wat betekent nesting? Codeer een voorbeeld met nesting erin.</h4>
+
+    <p>nesting: een element binnen een element</p>
+    <p>
+    <ol>
+        <li>De li-elementen bevinden zich binnen het ol-element</li>
+        <li>en zijn dus nested.</li>
+    </ol>
+    Dit is zichtbaar in de broncode.
+    </p>
+
+    <h2>Semantics</h2>
+
+    <h4>9. Sinds de komst van HTML5 zijn er elementen die betekenissen hebben. Wat
+        wordt er bedoeld met HTML semantics? Waarom is het gebruik van
+        semantics belangrijk?</h4>
+
+    <p>HTML semantics slaat op het feit dat sommige HTML-elementen iets zeggen over de aard van de content tussen een
+        opening en closing tag. Behalve mensen bezoeken ook machines websites, bijv. search engine web crawlers, browser
+        translation tools en screenreaders. De accessibility, searchibility en interoperability van een website nemen
+        toe met goede HTML semantics, d.w.z. een goed gebruik van de juiste HTML-elementen.</p>
+
+    <h4>10. Wat voor content zou je in de volgende elementen gebruiken? <br>
+        Geef in je antwoord voor elk element een toelichting.<br>
+        ● header<br>
+        ● footer<br>
+        ● main<br>
+        ● nav<br>
+        ● section<br>
+        ● aside<br>
+        ● article</h4>
+
+    <p>header: de content bovenaan een webpagina afgezien van de navigation bar die een eigen HTML-element heeft</p>
+
+    <p>footer: de content onderaan een webpagina</p>
+
+    <p>main: het hoofdbestanddeel van de boodschap van een webpagina</p>
+
+    <p>nav: de navigation bar die leidt naar alle andere delen van een website</p>
+
+    <p>section: groepeert elementen die bij elkaar horen. Meestal is dat een heading en de bijbehorende elementen.</p>
+
+    <p>aside: een terzijde die wel te maken heeft met main, maar tot de belangrijkste boodschap behoort, bijv. een
+        glossary, auteursinformatie, relevante links of advertenties</p>
+
+    <p>article: een op zichzelf staand stuk dat in principe in zijn geheel met andere websites en platformen gedeeld kan
+        worden, blogs of nieuwsberichten</p>
+
+    <h2>Headers</h2>
+
+    <h4>11. Onderzoek en leg uit waarom headers zowel belangrijk zijn voor zoekmachines als
+        voor de gebruikers.</h4>
+
+    <p>Headers maken het mogelijk dat mensen snel kunnen zien of een bericht informatie bevat die mensen belangrijk
+        vinden. En zoekmachines kunnen op grond van headers betere zoekresultaten vinden.</p>
+
+    <h4>12. Onderzoek hoe je een text-header aanmaakt en reproduceer het volgende resultaat:</h4>
+
+    <h1>Headings opdrachten</h1>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <h2>Paragrafen</h2>
+
+    <h4>13. Onderzoek wat een paragraaf tag is en hoe hij gebruikt wordt.
+        Geef hier een voorbeeld bij.</h4>
+
+    <p>Een paragraaf-tag duidt een alinea aan. De tag is een zogenaamd block-element, d.w.z. hij begint op een nieuwe
+        regel en beslaat de volle breedte van een browser. Een alinea is een eenheid van tekst die gaat over hetzelfde
+        onderwerp en bestaat meestal uit een aantal zinnen. Deze zinnen hier zijn een voorbeeld van een paragraaf-tag
+        die een alinea aanduidt.</p>
+
+    <h4>14. Onderzoek en leg het verschil tussen het stoppen van alle tekst in één
+        paragraaf tag, en het opsplitsen van de tekst in meerdere tags uit.</h4>
+
+    <p>Als alle tekst in één paragraaf-tag wordt gestopt, wordt dat één groot blok aan tekst. Dat kan er intimiderend en
+        moeilijk te verteren uitzien. Wanneer een tekst wordt verdeeld over meerdere paragraaf-tags, ziet de tekst er
+        veel overzichtelijker en beter georganiseerd uit.</p>
+
+    <h4>15. Reproduceer het volgende resultaat door gebruik te maken van text-headers
+        en de paragraaf tags.</h4>
+
+    <h1>Mijn eerste website</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita aperiam, ipsam quos asperiores omnis modi
+        iste. Placeat inventore, natus possimus, eos odit tenetur consequatur sapiente corrupti, minus quaerat
+        voluptate! Consequatur?</p>
+
+    <h2>Mijn eerste sub-kop</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, vitae delectus? Accusantium animi recusandae
+        amet. Molestiae voluptate accusamus deserunt, modi debitis numquam? Praesentium, voluptates? Deleniti maiores
+        consectetur dicta architecto mollitia!</p>
+
+    <h2>Mijn tweede sub-kop</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo itaque, autem veniam facere eveniet repellendus,
+        temporibus ipsa quis eos velit officiis veritatis inventore corrupti voluptatibus mollitia cum laborum maxime
+        numquam.</p>
+
+    <h2>Horizontal rule</h2>
+
+    <h4>16. Voeg een Horizontal rule toe en reproduceer het volgende resultaat.</h4>
+
+    <h1>Mijn eerste website</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita aperiam, ipsam quos asperiores omnis modi
+        iste. Placeat inventore, natus possimus, eos odit tenetur consequatur sapiente corrupti, minus quaerat
+        voluptate! Consequatur?</p>
+
+    <h2>Mijn eerste sub-kop</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, vitae delectus? Accusantium animi recusandae
+        amet. Molestiae voluptate accusamus deserunt, modi debitis numquam? Praesentium, voluptates? Deleniti maiores
+        consectetur dicta architecto mollitia!</p>
+
+    <h2>Mijn tweede sub-kop</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo itaque, autem veniam facere eveniet repellendus,
+        temporibus ipsa quis eos velit officiis veritatis inventore corrupti voluptatibus mollitia cum laborum maxime
+        numquam.</p>
+
+    <hr>
+
+    <h3>Footer</h3>
+
+    <p>Deze website is gebouwd vanuit de TechGrounds Academy.</p>
+
+
+    <h2>Link tags</h2>
+
+    <h4>17. Voeg een link tag toe en reproduceer het volgende resultaat in de footer.</h4>
+
+    <h3>Footer</h3>
+
+    <p>Deze website is gebouwd vanuit de <a href="">TechGrounds Academy</a>.</p>
+
+    <h4>18. Onderzoek welke 4 attributen een link tag kan hebben, leg uit wat deze doen en voeg deze als voorbeeld toe
+        op je website.</h4>
+
+    <p>href: specificeert de url</p>
+
+    <p>hreflang: geeft de taal van het gelinkte document aan</p>
+
+    <p>rel: beschrijft de relatie tussen het huidige en het target-document</p>
+
+    <p>target: bepaalt waar het doel-document wordt geopend</p>
+
+</body>
+
+</html>

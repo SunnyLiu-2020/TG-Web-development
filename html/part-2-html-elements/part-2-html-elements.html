@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onderdeel 2 - HTML Elementen</title>
+</head>
+
+<body>
+    <h1>Onderdeel 2 - HTML Elementen</h1>
+
+    <h2>Image, audio & video</h2>
+
+    <h4>1. Bij het inladen van een bestand is het noodzakelijk om de locatie van het <br>
+        bestand aan te geven. Dit kan op 2 manieren:<br>
+        ● Absolute path<br>
+        ● Relative path<br>
+        Wat houden deze 2 paths in?</h4>
+
+    <p>absolute: wijst target aan vanaf de root, adres verandert niet</p>
+
+    <p>relative: wijst target aan ten opzichte van een zekere locatie, bijv. de current working directory, target-adres
+        verandert afhankelijk van wat de huidige, actieve locatie is</p>
+
+    <h4>2. Zoek uit welke formaat afbeeldingen er nog meer kan zijn.</h4>
+
+    <p>jpeg, jpg, raw, png, gif, tiff</p>
+
+    <h4>3. Zoek uit welke browsers er zijn en maak een lijst van je antwoord.</h4>
+
+    <p>- konqueror<br>
+        - opera<br>
+        - firefox<br>
+        - epic<br>
+        - vivaldi<br>
+        - brave<br>
+        - ie<br>
+        - chrome<br>
+        - uc</p>
+
+    <h4>4. Onderzoek hoe het plaatsen van een foto gedaan wordt en plaats deze boven<br>
+        en onderaan je website door zowel gebruik te maken van de absolute path en<br>
+        relative path.</h4>
+
+    <p>Absolute:</p>
+    <a href="img-top-absolute-path.html">Foto bovenaan website - Absolute path</a>
+
+    <p>Relative (het plaatje zit in dezelfde map als dit html-bestand):</p>
+    <a href="img-bottom-relative-path.html">Foto onderaan website - Relative path</a>
+
+    <h4>5. Wat houdt de alt attribute in? En waarom is het handig om de alt attribuut te gebruiken?</h4>
+
+    <p>Als een browser de image niet kan weergeven, kan een bezoeker lezen wat hij of zij eigenlijk had moeten zien.</p>
+
+    <h4>6. Laadt dit bestand in als een audio op het scherm. <br>
+        Extra: Maak het leuker door de audio op repeat te zetten.<br>
+        Tip: gebruik controls attribute om audio af te spelen.</h4>
+
+    <audio controls loop>
+        <source src="audio/explosion.mp3" type="audio/mp3">
+    </audio>
+
+    <h4>7. Speel een audio bestand af met <span>&#60;source&#62;</span> tag. Leg uit wat hier het voordeel van is.</h4>
+
+    <audio controls loop>
+        <source src="audio/rooster.mp3" type="audio/mp3">
+        <source src="audio/rooster.wav" type="audio/wav">
+    </audio>
+
+    <p>Het voordeel van een <span>&#60;source&#62;</span> tag is dat als een browser een bepaald format niet kan
+        afspelen, een ander format wordt geprobeerd. Zie code-voorbeeld hierboven.</p>
+
+    <h4>8. Zoek een willekeurig video en sla dit op in je computer. Laadt dit bestand in als een video op het scherm.
+    </h4>
+
+    <video width="320" height="240" controls>
+        <source src="video/tiger.mp4" type="video/mp4">
+    </video>
+
+    <h2>Lijsten</h2>
+
+    <h4>9. Maak gebruik van de verschillende soorten lijsten om het volgende resultaat op je webpagina weer te geven.
+    </h4>
+
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <ol>
+            <li>sub item 1</li>
+            <li>sub item 2</li>
+        </ol>
+        <li>item 3</li>
+    </ol>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <ul>
+            <li>sub item 1</li>
+            <li>sub item 2</li>
+        </ul>
+        <li>item 3</li>
+    </ul>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <ol>
+            <li>sub item 1</li>
+            <li>sub item 2</li>
+        </ol>
+        <li>item 3</li>
+    </ul>
+
+    <h4>10. Bouw een navigatiebalk door gebruik te maken uit een lijst dat bestaat uit de volgende onderdelen: <br>
+        ○ Tigers<br>
+        ○ Lions<br>
+        ○ Monkeys<br>
+        ○ Hippopotaumus</h4>
+
+    <a href="nav-bar.html">Navigatiebalk</a>
+
+    <h4>11. Creëer nu voor elk onderdeel een header en een bijbehorende stuk tekst en <br>
+        zorg ervoor dat door te klikken op de links in de navigatiebalk je gerefereerd<br>
+        wordt naar het bijbehorende onderdeel.</h4>
+
+    <a href="nav-bar.html">Navigatiebalk + hyperlinks</a>
+    <p>N.B. Dit is hetzelfde html-document als bij 10.</p>
+</body>
+
+</html>
