@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6-Transitions-Opdracht-4</title>
+    <style>
+
+/* 1. How to make perfect squares? 2. How to make different transitions when hovering off container? */
+
+        .container {
+            position: relative;
+            max-width: 800px;
+            height: 500px;
+            border: 1px solid #000;
+            background-color: azure;
+        }
+
+        .box:nth-child(1) {
+            position: absolute;
+            text-align: center;
+            padding: 15px;
+            border: 1px solid black;
+            background-color: azure;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition-property: top left;
+            transition-duration: 2s;
+        }
+        
+        .box:nth-child(2) {
+            position: absolute;
+            text-align: center;
+            padding: 15px;
+            border: 1px solid black;
+            background-color: azure;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition-property: top left;
+            transition-duration: 2s;
+        }
+
+        .box:nth-child(3) {
+            position: absolute;
+            text-align: center;
+            padding: 15px;
+            border: 1px solid black;
+            background-color: azure;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition-property: top left;
+            transition-duration: 2s;
+            transition-delay: 2s;
+        }
+
+        .container:hover .box:nth-child(1) {
+            top: 250px;
+            top: 24px;
+            left: 781px;
+        }
+
+        .container:hover .box:nth-child(2) {
+            top: 250px;
+            top: 24px;
+            left: 19px;
+        }
+
+        .container:hover .box:nth-child(3) {
+            left: 19px;
+            top: 476px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>6-Transitions-Opdracht-4</h1>
+
+    <h4>Je kunt op verschillende properties transitions aangeven. Zie hieronder een voorbeeld. Zoek uit op welke
+        properties de transitions zitten en maak het ongeveer hetzelfde na.</h4>
+
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+
+</html>

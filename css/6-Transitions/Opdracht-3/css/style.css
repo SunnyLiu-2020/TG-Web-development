@@ -1,0 +1,97 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f0;
+}
+
+.box:nth-child(1) {
+    width: 10px;
+    height: 10px;
+    padding: 30px;
+    border: 1px solid black;
+    margin: 3px;
+    background-color: #f5f5f0;
+    text-align: center;
+    transition-property: margin-left, border-radius, background-color;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+}
+
+.box:nth-child(2) {
+    width: 10px;
+    height: 10px;
+    padding: 30px;
+    border: 1px solid black;
+    margin: 3px;
+    background-color: #f5f5f0;
+    text-align: center;
+    transition-property: margin-left, border-radius, background-color;
+    transition-duration: 3s;
+    transition-timing-function: ease-in;
+}
+
+.box:nth-child(3) {
+    width: 10px;
+    height: 10px;
+    padding: 30px;
+    border: 1px solid black;
+    margin: 3px;
+    background-color: #f5f5f0;
+    text-align: center;
+    transition-property: margin-left, border-radius, background-color;
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+}
+
+.box:nth-child(4) {
+    width: 10px;
+    height: 10px;
+    padding: 30px;
+    border: 1px solid black;
+    margin: 3px;
+    background-color: #fff;
+    text-align: center;
+    transition-property: margin-left, border-radius, background-color;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
+
+.box:nth-child(5) {
+    width: 10px;
+    height: 10px;
+    padding: 30px;
+    border: 1px solid black;
+    margin: 3px;
+    background-color: #f5f5f0;
+    text-align: center;
+    transition-property: margin-left, border-radius, background-color;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+}
+
+.flex-container:hover .box:nth-child(1) {
+    margin-left: 95%;
+    border-radius: 50%;
+    background-color: #ff0000;
+}
+
+.flex-container:hover .box:nth-child(2) {
+    margin-left: 95%;
+    border-radius: 15px;
+    background-color: #ff0000;
+}
+
+.flex-container:hover .box:nth-child(3) {
+    margin-left: 95%;
+    background-color: #ff0000;
+}
+
+.flex-container:hover .box:nth-child(4) {
+    margin-left: 95%;
+    background-color: #ff0000;
+}
+
+.flex-container:hover .box:nth-child(5) {
+    margin-left: 95%;
+    background-color: #ff0000;
+}

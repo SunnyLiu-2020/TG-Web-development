@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-Selectors-and-Visual-rules-Opdracht-8</title>
+</head>
+
+<body>
+    <h1>1-Selectors-and-Visual-rules-Opdracht-8</h1>
+
+    <h4>Styling die je toepast wordt toegepast in een bepaalde volgorde. Het kan voorkomen dat je styling toepast en
+        vervolgens niet het gewenste resultaat ziet. <strong><em>Cascade</em></strong> en
+        <strong><em>Inheritance</em></strong> zijn belangrijke concepten om te begrijpen hoe styling werkt. Lees hier in
+        de officiële documentatie meer over <a
+            href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance" target="_blank">cascade en
+            inheritance</a>. <br>
+        Zoek ook andere referenties om het concept te begrijpen.<br>
+
+        Leg in eigen woorden uit wat met cascade en inheritance wordt bedoeld. Maak voorbeelden om je antwoord uit te
+        leggen.</h4>
+
+    <h5>Cascade</h5>
+
+    <p>Cascading Style Sheets means that styles are defined in different ways for HTML elements, for example inline,
+        internal or external. That is what Style Sheets refer to. There can be more than one sheet, because there are
+        different ways to apply the styles. The word Cascading refers to the application process of these styles, which
+        takes place <em>consecutively</em> like a cascade, a waterfall that flows down one step at a time like the
+        individual steps of a staircase. The priority of the cascading process is:</p>
+
+    <ol>
+        <li>inline</li>
+        <li>external / internal, depending on whether <span>&#60;link&#62;</span> or <span>&#60;style&#62;</span> comes
+            last in <span>&#60;head&#62;</span>. The one last-mentioned in the head tag takes precedence, that is it
+            will win and dictate its style if the external and internal styles compete. This is because in the cascading
+            process the HTML document is read from top to bottom.</li>
+        <li>browser default</li>
+    </ol>
+
+    <p>Please click one of the following links to see which type of CSS style will win if they compete against each
+        other.</p>
+
+    <ul>
+        <li><a href="inline.html" target="_blank">inline</a></li>
+        <li><a href="internal.html" target="_blank">internal</a></li>
+        <li><a href="external.html" target="_blank">external</a></li>
+    </ul>
+
+    <p>The background color of inline.html is blue, because inline styles have priority over the competing internal and
+        external styles that define different background colors.</p>
+
+    <p>The background color of internal.html is green, because the style tag for internal CSS styling is mentioned last
+        in the HTML document as compared to the link tag, which links to an external CSS style document and is mentioned
+        earlier. Please note that the inline style declaration in the body tag has been deleted.</p>
+
+    <p>The background color of external.html is pink, because the link tag for external CSS styling is mentioned last in
+        the HTML document as compared to the style tag. Since the external style is read last by the browser, its
+        definition of a pink background color has precedence over the green color of the internal style.</p>
+
+    <h5>Inheritance</h5>
+
+    <p>The inheriting of style properties from its parent element. If the parent doesn't have any particular styles, CSS
+        will continue to look for the style properties of the parent's parent element all the way until a style property
+        is found. And then the style will be applied to the child or descendant element, which has a style property set,
+        not to aa value, but to the CSS keyword <em>inherit</em>.</p>
+
+    <ul>
+        <li><a href="inherit.html" target="_blank">inherit</a></li>
+    </ul>
+
+    <p>CSS defines the span element as being blue. However, there's an extra style declaration for span elements that
+        are nested within an element with class="extra". The article from the MDN on cascading and inheritance teaches
+        us that class selectors have a value of 10 and type / name / element selectors have a value of 1. Since the
+        class selector has a higher value than the element selector, the span element in the second div will inherit the
+        green color from its parent.</p>
+
+</body>
+
+</html>

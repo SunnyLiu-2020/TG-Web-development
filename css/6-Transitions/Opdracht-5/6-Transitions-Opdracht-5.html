@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6-Transitions-Opdracht-5</title>
+    <style>
+        .container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-image: url(img/chicken.jpg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .cover {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            transition: transform 2s;
+        }
+
+        .cover:hover {
+            transform: translate(300px, 200px) rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>6-Transitions-Opdracht-5</h1>
+
+    <h4>Hieronder zie je wederom een voorbeeld van een transition. Je kunt op verschillende properties transitions
+        aangeven. Zoek uit op welke properties de transitions zitten en maak het na. Je eigen creativiteit gebruiken is
+        uiteraard toegestaan.</h4>
+
+    <div class="container">
+        <div class="cover"></div>
+    </div>
+</body>
+
+</html>

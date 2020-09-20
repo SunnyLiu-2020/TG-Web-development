@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child selectors</title>
+    <style>
+        div>p {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Child selectors</h1>
+
+    <p>This is paragraph 1.</p>
+
+    <div>
+        <p>This is paragraph 2.</p>
+        <p>This is paragraph 3.</p>
+        <div>
+            <p>This is paragraph 4.</p>
+            <p>This is paragraph 5.</p>
+        </div>
+    </div>
+
+    <p>This is paragraph 6.</p>
+    <p>This is paragraph 7.</p>
+
+    <p>A child selector targets certain elements that share the same parent element. In this example all p elements are
+        targeted that have a div as parent element. Paragraph 2 and 3 are highlighted because they share the first div
+        as parent element.Paragraph 4 and 5 are also highlighted because they share the second div as parent.</p>
+</body>
+
+</html>

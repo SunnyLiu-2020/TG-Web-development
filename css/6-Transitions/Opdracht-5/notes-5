@@ -1,0 +1,27 @@
+kip
+
+.box
+pstn rel
+wi he 200px
+brdr 1px sld blk
+bgi url('./')
+bgi repeat no-repeat
+bgi pstn cent
+bgi sz cent
+
+.box:hover
+top 0
+lft 0
+bgc rd
+transform: rotate(45deg)
+
+.cover
+pstn abs
+tp 0
+lft 0
+wi he inherit
+bgc ylw
+transition: transform .5s linear
+bgc .5s linear
+tp .5s linear
+lft .5s linear

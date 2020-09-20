@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent sibling selectors</title>
+    <style>
+        div+p {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Adjacent sibling selectors</h1>
+
+    <p>This is paragraph 1.</p>
+    <p>This is paragraph 2.</p>
+
+    <div>
+        <p>This is paragraph 3.</p>
+    </div>
+
+    <p>This is paragraph 4.</p>
+    <p>This is paragraph 5.</p>
+
+    <p>Adjacent selectors are also known as adjacent sibling selectors. The reason why paragraph 4 is highlighted is
+        because the style declaration targets the p element that shares the same parent element with div (in this case
+        the body element) and immediately follows the div element.</p>
+</body>
+
+</html>

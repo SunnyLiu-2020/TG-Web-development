@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-Pseudo-elements-Opdracht-5</title>
+    <style>
+        div {
+            position: relative;
+            width: 900px;
+            height: 400px;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        /* Halil: bg-img in pseudo-element ipv content: url, bg-size: cover, top right bottom left = 0 */
+        /* Kristoffer: width height zelfde in zowel element en pseudo element */
+        /* Michael: overflow: hidden; */
+
+        div::before {
+            content: url(img/boxer1.jpg);
+            position: absolute;
+            left: -250px;
+            top: -50px;
+            z-index: -1;
+            opacity: .6;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>4-Pseudo-elements-Opdracht-5</h1>
+
+    <h4>Hieronder vind je nog eens een voorbeeld van het gebruik van een pseudo-element ::before. <br>
+        Kun jij dit namaken? Zoek een afbeelding op internet.</h4>
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quisquam ipsam. Explicabo reprehenderit
+        voluptates aspernatur aut tempora iste nostrum, in ex cupiditate. Asperiores omnis laboriosam perspiciatis sed,
+        deleniti eos at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quisquam ipsam. Explicabo
+        reprehenderit voluptates aspernatur aut tempora iste nostrum, in ex cupiditate. Asperiores omnis laboriosam
+        perspiciatis sed, deleniti eos at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+        quisquam ipsam. Explicabo reprehenderit voluptates aspernatur aut tempora iste nostrum, in ex cupiditate.
+        Asperiores omnis laboriosam perspiciatis sed, deleniti eos at. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Perferendis, quisquam ipsam. Explicabo reprehenderit voluptates aspernatur aut tempora iste
+        nostrum, in ex cupiditate. Asperiores omnis laboriosam perspiciatis sed, deleniti eos at. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Perferendis, quisquam ipsam. Explicabo reprehenderit voluptates aspernatur
+        aut tempora iste nostrum, in ex cupiditate. Asperiores omnis laboriosam perspiciatis sed, deleniti eos at. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quisquam ipsam. Explicabo reprehenderit
+        voluptates aspernatur aut tempora iste nostrum, in ex cupiditate. Asperiores omnis laboriosam perspiciatis sed,
+        deleniti eos at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quisquam ipsam. Explicabo
+        reprehenderit voluptates aspernatur aut tempora iste nostrum, in ex cupiditate. Asperiores omnis laboriosam
+        perspiciatis sed, deleniti eos at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+        quisquam ipsam. Explicabo reprehenderit voluptates aspernatur aut tempora iste nostrum, in ex cupiditate.
+        Asperiores omnis laboriosam perspiciatis sed, deleniti eos at. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Perferendis, quisquam ipsam. Explicabo reprehenderit voluptates aspernatur aut tempora iste
+        nostrum, in ex cupiditate. Asperiores omnis laboriosam perspiciatis sed, deleniti eos at.
+    </div>
+</body>
+
+</html>

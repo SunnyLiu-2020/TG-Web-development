@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-The-box-model-Opdracht-7</title>
+    <style>
+        div {
+            display: inline-block;
+            width: 130px;
+            height: 130px;
+            background-color: lightgray;
+        }
+
+        p {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            padding: 5px;
+            border: black solid 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>2-The-box-model-Opdracht-7</h1>
+
+    <h4>Maak nu een blok met width: 100px, height: 100px, margin: 5px, padding 5px en border-width: 5px. Zie hieronder:
+        <br>
+        1. Hoe breed is de box?<br>
+        2. Hoe hoog is de box?<br>
+        3. Wat merk je op met width en height?</h4>
+
+    <div>
+        <p>dit is de content</p>
+    </div>
+
+    <ol>
+        <li>The width is 130px.</li>
+        <li>The height is the same, 130px.</li>
+        <li>In order to calculate the width and height of a box one has to double the padding, border and margin, and
+            add the outcome to the width and height of the content.</li>
+    </ol>
+</body>
+
+</html>

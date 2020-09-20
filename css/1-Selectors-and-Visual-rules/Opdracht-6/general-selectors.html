@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General selectors</title>
+    <style>
+        div~p {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>General selectors</h1>
+
+    <p>This is paragraph 1.</p>
+    <p>This is paragraph 2.</p>
+
+    <div>
+        <p>This is paragraph 3.</p>
+        <p>This is paragraph 4.</p>
+    </div>
+
+    <p>This is paragraph 5.</p>
+    <p>This is paragraph 6.</p>
+
+    <p>The general selector is also called the general sibling selector. It targets a certain type of element that
+        follows another element and shares the same parent element. In this case paragraph 5, 6 and this paragraph are
+        highlighted because the style declaration targets any p that shares the same parent element as div (the body
+        element) and paragraph 5, 6 and this paragraph come after the div.</p>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+4 white
+1 ease
+3 linear
+all end red
+1 disc
+2 border radius
+#ff3333
+
+transition prprty & duration apart uitschrijven bij meerdere transitions op element dat je wilt veranderen
+
+herhaal 
+
+KSC:
+
+margin-left 3s linear
+border-radius 1s linear
+

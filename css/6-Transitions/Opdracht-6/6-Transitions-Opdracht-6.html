@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6-Transitions-Opdracht-6</title>
+    <style>
+        .container {
+            position: relative;
+            width: 600px;
+            height: 300px;
+            background-color: #f5f5f0;
+        }
+
+        .card {
+            position: absolute;
+            width: 200px;
+            height: 250px;
+            background-color: #c2c2a3;
+            color: white;
+            border-radius: 10%;
+            padding: 2%;
+            border: 1px solid #000;
+        }
+
+        .card h2 {
+            margin-bottom: 50%;
+        }
+
+        .card:nth-child(1) {
+            top: 13px;
+            left: 10px;
+            transition-property: top;
+            transition-duration: .5s;
+        }
+
+        .card:nth-child(2) {
+            top: 13px;
+            left: 60px;
+            transition-property: top;
+            transition-duration: .5s;
+        }
+
+        .card:nth-child(3) {
+            top: 13px;
+            left: 110px;
+            transition-property: top;
+            transition-duration: .5s;
+        }
+
+        .card:nth-child(4) {
+            top: 13px;
+            left: 160px;
+            transition-property: top;
+            transition-duration: .5s;
+        }
+
+        .card:nth-child(1):hover {
+            top: 3px;
+        }
+
+        .card:nth-child(2):hover {
+            top: 3px;
+        }
+
+        .card:nth-child(3):hover {
+            top: 3px;
+        }
+
+        .card:nth-child(4):hover {
+            top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>6-Transitions-Opdracht-6</h1>
+
+    <h4>Zie de onderstaande card deck. Kun jij deze zelf namaken? Je mag uiteraard weer je eigen creativiteit erop los
+        laten.</h4>
+
+    <div class="container">
+        <div class="card">
+            <p>Article Sep16, 2019</p>
+            <h2>Placeholder title</h2>
+            <p>Author:</p>
+            <p>Kim Sing</p>
+        </div>
+        <div class="card">
+            <p>Article Sep16, 2019</p>
+            <h2>Placeholder title</h2>
+            <p>Author:</p>
+            <p>Kim Sing</p>
+        </div>
+        <div class="card">
+            <p>Article Sep16, 2019</p>
+            <h2>Placeholder title</h2>
+            <p>Author:</p>
+            <p>Kim Sing</p>
+        </div>
+        <div class="card">
+            <p>Article Sep16, 2019</p>
+            <h2>Placeholder title</h2>
+            <p>Author:</p>
+            <p>Kim Sing</p>
+        </div>
+    </div>
+</body>
+
+</html>
