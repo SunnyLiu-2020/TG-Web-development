@@ -8,7 +8,24 @@
 </head>
 
 <body>
-    <script></script>
+    <input type="number" name="number" id="number">
+    <button id="btn" onclick="checkNumber()">Button</button>
+    
+    <div>
+        <span id="label"></span>
+    </div>
+
+    <script>
+        function checkNumber() {
+            let number = document.getElementById("number").value;
+            let text;
+
+            if (number > 5 && number < 10) {
+                text = "Het ingevoerde getal is tussen 5 en 10.";
+            }
+            document.getElementById("label").innerHTML = text;
+        }
+    </script>
 </body>
 
 </html>

@@ -8,7 +8,47 @@
 </head>
 
 <body>
-    <script></script>
+    <p>1. charAt() gives the letter in a certain position, while the string is zero-indexed.</p>
+    <script>
+        let string = "De zon schijnt.";
+        console.log(string.charAt(5));
+    </script>
+
+    <p>2. concat() concatenates different strings.</p>
+    <script>
+        let string1 = "De zon schijnt.";
+        let string2 = "En het regent niet.";
+        console.log(string1.concat(" ", string2));
+    </script>
+
+    <p>3. slice() takes a section of a string.</p>
+    <script>
+        let str3 = "En het regent niet.";
+        console.log(str3.slice(3));
+        console.log(str3.slice(7, 13));
+        console.log(str3.slice(-5, -1));
+    </script>
+
+    <p>4. split() searches for certan parts of a string and prints them out.</p>
+    <script>
+        const str4 = "De zon schijnt.";
+
+        const words = str4.split(' ');
+        console.log(words[2]);
+
+        const chars = str4.split('');
+        console.log(chars[3]);
+
+        const strCopy = str4.split();
+        console.log(strCopy);
+    </script>
+
+    <p>5. substr() gives a portion of a string.</p>
+    <script>
+        const str5 = "We hebben lekker gewandeld.";
+        console.log(str5.substr(10));
+        console.log(str5.substr(0, 2));
+    </script>
 </body>
 
 </html>

@@ -8,7 +8,26 @@
 </head>
 
 <body>
-    <script></script>
+    <input type="number" name="number" id="number">
+    <button id="btn" onclick="checkNumber()">Button</button>
+    
+    <div>
+        <span id="label"></span>
+    </div>
+
+    <script>
+        function checkNumber() {
+            let number = document.getElementById("number").value;
+            let text;
+
+            if (number < 31 || number > 34 && number < 41 || number > 44) {
+                text = "";
+            } else {
+                text = "Het getal is tussen 30 en 35 of het getal is tussen 40 en 45.";
+            }
+            document.getElementById("label").innerHTML = text;
+        }
+    </script>
 </body>
 
 </html>
