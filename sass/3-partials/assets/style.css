@@ -1,0 +1,19 @@
+.button {
+  color: white;
+  border-style: none;
+  padding: 15px 30px;
+  background-color: red;
+}
+
+.button:hover {
+  background-color: green;
+}
+
+.button {
+  background-color: pink;
+}
+
+.button:hover {
+  background-color: purple;
+}
+/*# sourceMappingURL=style.css.map */

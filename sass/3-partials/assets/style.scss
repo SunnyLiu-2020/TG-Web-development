@@ -1,0 +1,9 @@
+@import "button";
+
+.button {
+    background-color: pink;
+
+    &:hover {
+        background-color: purple;
+    }
+}

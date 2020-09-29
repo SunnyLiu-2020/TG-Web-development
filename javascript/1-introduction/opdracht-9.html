@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>++ results in 4.</p>
+    <p>-- results in 2.</p>
+    <p>With const sum = number++ + 2 the result is 5, because with postfix increment the value is first used in the expression and then incremented: 3 + 2 = 5.</p>
+    <p>With const sum = ++number + 2 the result is 6, because with prefix increment the value is first incremented (3 + 1 = 4) and then used in the expression: 4 + 2 = 6.</p>
+    <script>
+        let number = 3;
+        const sum = ++number + 2;
+        console.log(sum);
+    </script>
+</body>
+
+</html>

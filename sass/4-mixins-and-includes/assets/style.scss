@@ -1,0 +1,44 @@
+@mixin button {
+    background-color: blue;
+    color: yellow;
+    border: none;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+@mixin hover {
+    background-color: red;
+    color: white;
+}
+
+.button {
+    @include button;
+
+    &:hover {
+        @include hover
+    }
+}
+
+// Opdracht 2
+
+@mixin div-transition {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition-property: background-color;
+    transition-duration: 2s;
+    margin: 1em;
+}
+
+@mixin div-hover {
+    background-color: red;
+}
+
+.colorChangingSquare {
+    @include div-transition;
+
+    &:hover {
+        @include div-hover;
+    }
+}

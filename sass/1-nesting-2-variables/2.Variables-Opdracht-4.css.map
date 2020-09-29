@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,OADG,AACF,KAAK,CAAC;EACH,gBAAgB,EAAE,IAAI;CACzB;;AAHL,AAII,OAJG,AAIF,QAAQ,CAAC;EACN,gBAAgB,EAAE,IAAI;CACzB;;AANL,AAOI,OAPG,AAOF,MAAM,CAAC;EACJ,gBAAgB,EAAE,IAAI;CACzB;;AATL,AAUI,OAVG,AAUF,OAAO,CAAC;EACL,gBAAgB,EAAE,IAAI;CACzB",
+    "sources": [
+        "2.Variables-Opdracht-4.scss"
+    ],
+    "names": [],
+    "file": "2.Variables-Opdracht-4.css"
+}

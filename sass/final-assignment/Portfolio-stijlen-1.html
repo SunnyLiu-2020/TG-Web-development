@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Ik heb me alleen geconcentreerd op het stileren van de tabel en het invulformulier in Portfolio-stijlen-2.html. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social media 1</title>
+</head>
+
+<body>
+    <header class="nav">
+        <nav>
+            <ul>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">User Profile</a></li>
+                <li><a href="">Members</a></li>
+                <li><a href="">Assignments</a></li>
+                <li><a href="">Blogs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile">
+        <div class="header">
+            <img src="" alt="" class="bg-img">
+            <img src="Kim_Sing.png" alt="" class="fg-img">
+        </div>
+
+        <div id="main">
+            <h3>Kim Sing</h3>
+            <a href="">@chengks</a>
+            <q class="ks">Being open-minded of other solutions gains better results than using the first encountered
+                solution</q>
+
+            <hr>
+
+            <form action="">
+                <a href=""><img src="like-icon.png" alt="Like icon"></a>
+                <input type="text" class="like" name="like" value="+1000">
+
+                <a href=""><img src="love-icon.png" alt="Love icon"></a>
+                <input type="text" class="love" name="love" value="+999">
+
+                <a href=""><img src="dislike-icon.png" alt="Dislike icon"></a>
+                <input type="text" class="dislike" name="dislike" value="0">
+            </form>
+        </div>
+
+        <div class="footer">
+            <img src="" alt="" class="ft-img">
+        </div>
+
+    </main>
+
+    <div class="info">
+        <div class="pers-info">
+            <h4 class="info-h4">Personal Information</h4>
+
+            <!-- Use readonly attribute in input tag, and bottom-border to underline the items. -->
+
+            <form action="/action_page.php">
+                <label for="fname">Name:</label>
+                <input type="text" class="fname" name="fname" value="Kim Sing">
+
+                <label for="lname">Surname:</label>
+                <input type="text" class="lname" name="lname" value="Cheng"><br><br>
+
+                <label for="age">Age:</label>
+                <input type="text" class="age" name="age" value="40">
+
+                <label for="sex">Sex:</label>
+                <input type="text" class="sex" name="sex" value="M">
+
+                <label for="bdate">Date of birth:</label>
+                <input type="text" class="bdate" name="bdate" value="1-1-1980"><br><br>
+
+                <label for="address">Address:</label>
+                <input type="text" class="address" name="address" value="Osdorpplein 16">
+
+                <label for="pcode">Postal code:</label>
+                <input type="text" class="pcode" name="pcode" value="1234AB"><br><br>
+
+                <label for="city">City:</label>
+                <input type="text" class="city" name="city" value="Amsterdam">
+
+                <label for="country">Country:</label>
+                <input type="text" class="country" name="country" value="NL">
+
+                <label for="profession">Profession:</label>
+                <input type="text" class="profession" name="profession" value="Full stack developer"><br><br>
+
+                <label for="hobby">Hobby:</label>
+                <input type="text" class="hobby" name="hobby" value="Table tennis">
+            </form>
+
+            <br>
+
+            <!--Ik had het oorspronkelijk als hierboven gedaan, maar n.a.v. de opmerking van Kim Sing in Slack heb ik het opnieuw gedaan als hierbeneden.-->
+            <!-- Sohaib recommends using p tags. -->
+
+            <div class="row1">
+                <span>Name: Kim Sing</span> <span>Surname: Cheng</span>
+            </div>
+
+            <div class="row2">
+                <span>Age: 40</span> <span>Sex: M</span> <span>Date of birth: 01-01-1980</span>
+            </div>
+
+            <div class="row3">
+                <span>Address: Osdorpplein 16</span> <span>Postal code: 1234AB</span>
+            </div>
+
+            <div class="row4">
+                <span>City: Amsterdam</span> <span>Country: NL</span> <span>Profession: Full stack developer</span>
+            </div>
+
+            <div class="row5">
+                <span>Hobby: Table tennis</span>
+            </div>
+        </div>
+
+        <div class="languages">
+            <h4 class="info-h4">Languages</h4>
+
+            <!-- Put this in a table for proper organization, as recommended by Sohaib. Get stars from fontawesome or lineicons. -->
+
+            <p>HTML:</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Java:</p>
+            <p>Kotlin</p>
+            <p>Groovy</p>
+        </div>
+
+        <div class="ft">
+            <h4 class="info-h4">Frameworks & Tools</h4>
+        </div>
+    </div>
+
+</body>
+
+</html>

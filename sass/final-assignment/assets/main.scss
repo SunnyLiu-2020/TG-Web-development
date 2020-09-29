@@ -1,0 +1,130 @@
+@import "base";
+@import "layout";
+@import "components";
+
+.chef-img {
+    display: none;
+}
+
+@media only screen and (min-width:$break-small) and (max-width:$break-medium) {
+    .pasta-price span {
+        font-size: 2em;
+    }
+
+    .popular-dishes p {
+        font-size: 1.5em;
+    }
+
+    .menu-dishes p {
+        font-size: 1.5em;
+    }
+
+    .contact {
+        h4 {
+            font-size: 2em;
+        }
+
+        & p {
+            font-size: 1.5em;
+        }
+
+        & i {
+            font-size: 3em;
+            padding: 1em;
+        }
+    }
+
+    .navigation {
+        h4 {
+            font-size: 2em;
+        }
+
+        & a {
+            font-size: 1.5em;
+        }
+    }
+
+@media only screen and (min-width: $break-xlarge) {
+    button {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        width: 200px;
+        height: 50px;
+        border: 1px solid $color-green;
+        background-color: transparent;
+    }
+
+    .button-container {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .popular h2 {
+        font-size: 4em;
+    }
+
+    .popular-dishes {
+        width: 33.3%;
+    }
+
+    .popular-dishes img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu h2 {
+        font-size: 4em;
+        text-align: center;
+    }
+
+    .menu-container {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .chef-img {
+        display: inline-block;
+        width: 20%;
+        margin: 5%;
+    }
+
+    .menu-dishes {
+        width: 25%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: $color-green;
+        color: $color-blue;
+        text-align: left;
+        padding-bottom: 5em;
+        margin: 20px 0px 40px 0px;
+    }
+
+    .contact {
+        margin-left: 25em;
+        width: 25%;
+    }
+
+    .contact h4 {
+        font-size: 20px;
+    }
+
+    .navigation {
+        margin-left: 10em;
+    }
+
+    .navigation a {
+        color: $color-blue;
+        font-size: 20px;
+        padding: 3%;
+        margin: 0;
+        display: block;
+     }
+}

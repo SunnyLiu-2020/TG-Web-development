@@ -1,0 +1,38 @@
+* {
+    font-family: 'Lobster', cursive;
+}
+
+$color-blue: rgb(97, 135, 216);
+$color-green: rgb(128, 179, 128);
+$color-default: #000;
+
+$break-xsmall: 575px;
+$break-small: 576px;
+$break-medium: 786px;
+$break-large: 992px;
+$break-xlarge: 1200px;
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav a {
+    color: $color-default;
+    font-size: 5vw;
+    padding-left: 7%;
+}
+
+.navigation {
+
+    h4 {
+        font-size: 20px;
+    }
+
+    & a {
+        color: $color-blue;
+        font-size: 20px;
+        padding: 100px;
+        margin: 100px;
+    }
+}

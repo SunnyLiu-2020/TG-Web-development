@@ -1,0 +1,33 @@
+$break-xsmall: 575px;
+$break-small: 576px;
+$break-medium: 768px;
+$break-large: 992px;
+$break-xlarge: 1200px;
+
+.chef-img {
+    position: absolute;
+
+    @media only screen and (max-width: $break-xsmall) {
+        display: none;
+    }
+
+    @media only screen and (min-width: $break-small) {
+        display: inline;
+        width: 10%;
+    }
+
+    @media only screen and (min-width: $break-medium) {
+        display: inline;
+        width: 15%;
+    }
+
+    @media only screen and (min-width: $break-large) {
+        display: inline;
+        width: 20%;
+    }
+
+    @media only screen and (min-width: $break-xlarge) {
+        display: inline;
+        width: 25%;
+    }
+}

@@ -1,0 +1,78 @@
+nav {
+    text-align: right;
+    padding-top: 3%;
+    padding-right: 10%;
+    padding-bottom: 4%;
+    position: sticky;
+    top: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    z-index: 1;
+}
+
+button {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    width: 300px;
+    height: 80px;
+    border: 1px solid $color-green;
+    margin-bottom: 30px;
+    background-color: transparent;
+}
+
+.button {
+    &-container {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-buy {
+        color: $color-blue;
+        transition: background-color;
+    }
+
+    &-buy:hover {
+        background-color: $color-green
+    }
+
+    &-show-more {
+        color: $color-green;
+        transition: background-color;
+    }
+
+    &-show-more:hover {
+        background-color: $color-blue;
+    }
+}
+
+.contact {
+    h4 {
+        font-size: 20px;
+    }
+    
+    & i {
+        font-size: 36px;
+        margin: 5px;
+    }
+}
+
+@media only screen and (min-width: $break-xlarge) {
+    nav {
+        text-align: right;
+        padding-top: 0;
+        padding-right: 5%;
+        padding-bottom: 0;
+        position: sticky;
+        top: 0px;
+        background-color: transparent;
+        border-bottom: 1px solid $color-default;
+        z-index: 1;
+    }
+
+    nav a {
+        color: $color-default;
+        font-size: 1.5em;
+        padding-left: 7%;
+    }
