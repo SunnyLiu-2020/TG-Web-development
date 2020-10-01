@@ -8,7 +8,70 @@
 </head>
 
 <body>
-    <script></script>
+    <input type="text" name="text" id="text">
+    <button onclick="friendFoe(name)">click</button>
+    <p id="answer"></p>
+
+    <script>
+        // let friend1 = "John";
+        // let friend2 = "Olly";
+        // let friend3 = "Mo";
+        // let friend4 = "Hendrik";
+        // let friend5 = "Tony";
+
+        // let John = 1;
+        // let Oly = 2;
+        // let Mo = 3;
+        // let Hendrik = 4;
+        // let Tony = 5;
+        // let Irus = 6;
+        // let Jan = 7;
+        // let Peter = 8;
+
+        const names = ["John", "Oly", "Mo", "Hendrik", "Tony", "Irus", "Jan", "Peter"];
+        const randomName = words[Math.ceil(Math.random() * 8)];
+        const answer = words[guessingWord];
+
+        function randomizeName() {
+            let randomNumber = Math.ceil(Math.random() * 8);
+            Math.ceil(Math.random() * 8);
+            return randomNumber;
+        }
+
+        let number = randomizeName();
+
+
+
+        function friendFoe(name) {
+            name = document.getElementById("text").value;
+
+            if (name == "John") {
+                document.getElementById("answer").innerHTML = "Dit is een bekende van ons: " + name;
+            } else if (name == "Olly") {
+                document.getElementById("answer").innerHTML = "Dit is een bekende van ons: " + name;
+            } else if (name == "Mo") {
+                document.getElementById("answer").innerHTML = "Dit is een bekende van ons: " + name;
+            } else if (name == "Hendrik") {
+                document.getElementById("answer").innerHTML = "Dit is een bekende van ons: " + name;
+            } else if (name == "Tony") {
+                document.getElementById("answer").innerHTML = "Dit is een bekende van ons: " + name;
+            } else if (name == "Irus") {
+                document.getElementById("answer").innerHTML = "Dit is een bekende van ons: " + name;
+            } else if (name == "Jan") {
+                document.getElementById("answer").innerHTML = "Dit is een bekende van ons: " + name;
+            } else if (name == "Peter") {
+                document.getElementById("answer").innerHTML = "Dit is een bekende van ons: " + name;
+            } else {
+                document.getElementById("answer").innerHTML = "Onbekend in ons systeem!"
+            }
+        }
+
+        // friendFoe(friend1);
+        // friendFoe(friend2);
+        // friendFoe(friend3);
+        // friendFoe(friend4);
+        // friendFoe(friend5);
+    </script>
 </body>
 
 </html>

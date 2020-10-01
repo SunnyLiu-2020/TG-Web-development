@@ -8,7 +8,41 @@
 </head>
 
 <body>
-    <script></script>
+    <input type="text" name="text" id="text">
+    <button onclick="friendFoe(name)">click</button>
+    <p id="answer"></p>
+
+    <script>
+        // let friend1 = "John";
+        // let friend2 = "Olly";
+        // let friend3 = "Mo";
+        // let friend4 = "Hendrik";
+        // let friend5 = "Tony";
+
+        function friendFoe(name) {
+            name = document.getElementById("text").value;
+
+            if (name == "John") {
+                document.getElementById("answer").innerHTML = "Dit is een bekende van ons: " + name;
+            } else if (name == "Olly") {
+                document.getElementById("answer").innerHTML = "Dit is een bekende van ons: " + name;
+            } else if (name == "Mo") {
+                document.getElementById("answer").innerHTML = "Dit is een bekende van ons: " + name;
+            } else if (name == "Hendrik") {
+                document.getElementById("answer").innerHTML = "Dit is een bekende van ons: " + name;
+            } else if (name == "Tony") {
+                document.getElementById("answer").innerHTML = "Dit is een bekende van ons: " + name;
+            } else {
+                document.getElementById("answer").innerHTML = "Onbekend in ons systeem!"
+            }
+        }
+
+        // friendFoe(friend1);
+        // friendFoe(friend2);
+        // friendFoe(friend3);
+        // friendFoe(friend4);
+        // friendFoe(friend5);
+    </script>
 </body>
 
 </html>

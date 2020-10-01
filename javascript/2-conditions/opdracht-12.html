@@ -20,10 +20,10 @@
             let number = document.getElementById("number").value;
             let text;
 
-            if (number < 31 || number > 34 && number < 41 || number > 44) {
-                text = "";
-            } else {
+            if (number > 30 && number < 35 || number > 40 && number < 45) {
                 text = "Het getal is tussen 30 en 35 of het getal is tussen 40 en 45.";
+            } else {
+                text = "";
             }
             document.getElementById("label").innerHTML = text;
         }

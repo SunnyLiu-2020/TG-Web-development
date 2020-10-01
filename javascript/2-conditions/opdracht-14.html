@@ -8,7 +8,70 @@
 </head>
 
 <body>
-    <script></script>
+    <h1>Translate months</h1>
+
+    <input type="number" name="number" id="number">
+    <button onclick="translateMonth()">translate</button>
+
+    <div id="translatedMonth"></div>
+
+    <script>
+        function translateMonth() {
+            switch (document.getElementById("number").value) {
+                case "1":
+                    document.getElementById("translatedMonth").innerHTML = "January"
+                    break;
+                case "2":
+                    document.getElementById("translatedMonth").innerHTML = "February";
+                    break;
+                case "3":
+                    document.getElementById("translatedMonth").innerHTML = "March";
+                    break;
+                case "4":
+                    document.getElementById("translatedMonth").innerHTML = "April";
+                    break;
+                case "5":
+                    document.getElementById("translatedMonth").innerHTML = "May";
+                    break;
+                case "6":
+                    document.getElementById("translatedMonth").innerHTML = "June";
+                    break;
+                case "7":
+                    document.getElementById("translatedMonth").innerHTML = "July";
+                    break;
+                case "8":
+                    document.getElementById("translatedMonth").innerHTML = "August";
+                    break;
+                case "9":
+                    document.getElementById("translatedMonth").innerHTML = "September";
+                    break;
+                case "10":
+                    document.getElementById("translatedMonth").innerHTML = "October";
+                    break;
+                case "11":
+                    document.getElementById("translatedMonth").innerHTML = "November";
+                    break;
+                case "12":
+                    document.getElementById("translatedMonth").innerHTML = "December";
+                    break;
+                default:
+                    document.getElementById("translatedMonth").innerHTML = ("This number doesn't correspond to a month.");
+            }
+        }
+
+        // month[0] = "January";
+        // month[1] = "February";
+        // month[2] = "March";
+        // month[3] = "April";
+        // month[4] = "May";
+        // month[5] = "June";
+        // month[6] = "July";
+        // month[7] = "August";
+        // month[8] = "September";
+        // month[9] = "October";
+        // month[10] = "November";
+        // month[11] = "December";
+    </script>
 </body>
 
 </html>
