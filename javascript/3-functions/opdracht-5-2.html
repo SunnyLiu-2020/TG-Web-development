@@ -15,7 +15,7 @@
     <script>
         let names = ["John", "Kees", "Olly", "Olivier", "Mo", "Marietje", "Hendrik", "Helena", "Tony", "Tim", "Irus", "Irene", "Jan", "Jessica", "Peter", "Petronella"];
 
-        let randomizeName = () => {
+        function randomizeName() {
             return names[Math.floor(Math.random() * names.length)];
         }
 
@@ -23,9 +23,9 @@
 
         document.getElementById("text").value = randomName;
 
-        document.getElementById("btn").click();
+        document.querySelector("#btn").click();
 
-        let friendFoe = () => {
+        function friendFoe(name) {
             name = document.getElementById("text").value;
 
             if (name == "John") {

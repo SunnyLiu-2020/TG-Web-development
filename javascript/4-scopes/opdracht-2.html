@@ -8,7 +8,17 @@
 </head>
 
 <body>
-    <script></script>
+    <p>Uncaught ReferenceError: carBrand is not defined</p>
+    <p>Probably what is meant is that carName should be carBrand. In that case the console logs "undefined". But if the printCar function is called, it will print "Volvo".</p>
+
+    <script>
+        let carBrand;
+        function printCar() {
+            carBrand = "Volvo";
+        }
+        // printCar();
+        console.log(carBrand);
+    </script>
 </body>
 
 </html>

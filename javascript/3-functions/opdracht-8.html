@@ -5,10 +5,228 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+        }
+
+        div>div {
+            padding: 2rem 3rem;
+        }
+
+        th,
+        td {
+            border: 1px solid #ebebe0;
+            text-align: left;
+        }
+    </style>
 </head>
 
 <body>
-    <script></script>
+    <div class="container">
+        <div class="wiskunde">
+            <h2>Wiskunde</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Naam</td>
+                        <th>Cijfer</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Willem</td>
+                        <td id="ww" class="grade">3</td>
+                    </tr>
+                    <tr>
+                        <td>Jan</td>
+                        <td id="jnw" class="grade">7</td>
+                    </tr>
+                    <tr>
+                        <td>Kim Sing</td>
+                        <td id="kw" class="grade">10</td>
+                    </tr>
+                    <tr>
+                        <td>Samantha</td>
+                        <td id="sw" class="grade">4</td>
+                    </tr>
+                    <tr>
+                        <td>Joyce</td>
+                        <td id="jcw" class="grade">5.5</td>
+                    </tr>
+                    <tr>
+                        <td>Gareth</td>
+                        <td id="gw" class="grade">1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="natuurkunde">
+            <h2>Natuurkunde</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Naam</td>
+                        <th>Cijfer</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Willem</td>
+                        <td id="wna" class="grade">7</td>
+                    </tr>
+                    <tr>
+                        <td>Jan</td>
+                        <td id="jnna" class="grade">5</td>
+                    </tr>
+                    <tr>
+                        <td>Kim Sing</td>
+                        <td id="kna" class="grade">8</td>
+                    </tr>
+                    <tr>
+                        <td>Samantha</td>
+                        <td id="sna" class="grade">6</td>
+                    </tr>
+                    <tr>
+                        <td>Joyce</td>
+                        <td id="jcna" class="grade">9</td>
+                    </tr>
+                    <tr>
+                        <td>Gareth</td>
+                        <td id="gna" class="grade">5.5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="nederlands">
+            <h2>Nederlands</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Naam</td>
+                        <th>Cijfer</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Willem</td>
+                        <td id="wnl" class="grade">7</td>
+                    </tr>
+                    <tr>
+                        <td>Jan</td>
+                        <td id="jnnl" class="grade">7</td>
+                    </tr>
+                    <tr>
+                        <td>Kim Sing</td>
+                        <td id="knl" class="grade">4</td>
+                    </tr>
+                    <tr>
+                        <td>Samantha</td>
+                        <td id="snl" class="grade">8</td>
+                    </tr>
+                    <tr>
+                        <td>Joyce</td>
+                        <td id="jcnl" class="grade">8.5</td>
+                    </tr>
+                    <tr>
+                        <td>Gareth</td>
+                        <td id="gnl" class="grade">4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="engels">
+            <h2>Engels</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Naam</td>
+                        <th>Cijfer</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Willem</td>
+                        <td id="we" class="grade">6</td>
+                    </tr>
+                    <tr>
+                        <td>Jan</td>
+                        <td id="jne" class="grade">6</td>
+                    </tr>
+                    <tr>
+                        <td>Kim Sing</td>
+                        <td id="ke" class="grade">5.5</td>
+                    </tr>
+                    <tr>
+                        <td>Samantha</td>
+                        <td id="se" class="grade">4.3</td>
+                    </tr>
+                    <tr>
+                        <td>Joyce</td>
+                        <td id="jce" class="grade">5.5</td>
+                    </tr>
+                    <tr>
+                        <td>Gareth</td>
+                        <td id="ge" class="grade">8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="gemiddeld">
+            <h2>Resultaat gemiddeld</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Naam</th>
+                        <th>Talen</th>
+                        <th>Beta</th>
+                        <th>> 6,5 = over</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Willem</td>
+                        <td id="wt" class="grade">6.5</td>
+                        <td id="wb" class="grade">5</td>
+                        <td id="wo" class="next-grade">No</td>
+                    </tr>
+                    <tr>
+                        <td>Jan</td>
+                        <td id="jnt" class="grade">6.5</td>
+                        <td id="jnb" class="grade">6</td>
+                        <td id="jno" class="next-grade">No</td>
+                    </tr>
+                    <tr>
+                        <td>Kim Sing</td>
+                        <td id="kt" class="grade">4.5</td>
+                        <td id="kb" class="grade">9</td>
+                        <td id="ko" class="next-grade">Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Samantha</td>
+                        <td id="st" class="grade">6</td>
+                        <td id="sb" class="grade">5</td>
+                        <td id="so" class="next-grade">No</td>
+                    </tr>
+                    <tr>
+                        <td>Joyce</td>
+                        <td id="jct" class="grade">6.5</td>
+                        <td id="jcb" class="grade">7</td>
+                        <td id="jco" class="next-grade">Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Gareth</td>
+                        <td id="gt" class="grade">6</td>
+                        <td id="gb" class="grade">3</td>
+                        <td id="go" class="next-grade">No</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="opdracht-8.js"></script>
 </body>
 
 </html>

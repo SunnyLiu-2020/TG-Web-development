@@ -8,7 +8,15 @@
 </head>
 
 <body>
-    <script></script>
+    <p>Uncaught ReferenceError: carBrand is not defined</p>
+    <p>The carBrand variable has block scope, so is only usable within the function.</p>
+
+    <script>
+        function printCar() {
+            const carBrand = "Volvo";
+        }
+        console.log(carBrand);
+    </script>
 </body>
 
 </html>
