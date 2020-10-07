@@ -8,7 +8,20 @@
 </head>
 
 <body>
-    <script></script>
+    <p>The console.log prints "Volvo v40". The closure uses the self-invoking function functionality.</p>
+    
+    <script>
+        function printCar() {
+            carBrand = "Volvo";
+
+            return function(type) {
+                console.log(carBrand + " " + type);
+            }
+        }
+        
+        const car = printCar();
+        car("v40");
+    </script>
 </body>
 
 </html>

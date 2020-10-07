@@ -10,6 +10,7 @@
 <body>
     <p>Uncaught ReferenceError: carBrand is not defined</p>
     <p>Probably what is meant is that carName should be carBrand. In that case the console logs "undefined". But if the printCar function is called, it will print "Volvo".</p>
+    <p>Assigning "Volvo" to carBrand within the function only has block scope and is not available outside this function.</p>
 
     <script>
         let carBrand;

@@ -1,16 +1,23 @@
-function passNoPass(grade) {
+function passNoPass() {
     // let grades = ["ww", "jnw", "kw", "sw", "jcw", "gw", "wna", "jnna", "kna", "sna", "jcna", "gna", "wnl", "jnnl", "knl", "snl", "jcnl", "gnl", "we", "jne", "ke", "se", "jce", "ge", "wt", "wb", "jnt", "jnb", "kt", "kb", "st", "sb", "jct", "jcb", "gt", "gb"]
 
-    // let grade;
-
-    // for (let i = 0; i < grades.length; i++) {
-    //     grade = grades[i];
-    // }
+    
     
     // document.getElementById(grades[i]).value;
 
-    let grade = document.getElementsByClassName("grade").value;
+    // don't use .value on a list!!!!!!!
+    let  = document.getElementsByClassName("grade");
 
+    let grade = 
+
+    .innerHTML
+
+    console.log(grade);
+
+    
+}
+
+for (let i = 0; i < grade.length; i++) {
     if (grade < 5.5) {
         document.getElementsByClassName("grade").style.background = "#ff6666";
     } else if (grade >= 5.5 && grade < 7.5) {
@@ -18,9 +25,8 @@ function passNoPass(grade) {
     } else if (grade >= 7.5 && grade <= 10) {
         document.getElementsByClassName("grade").style.background = "#00ff00"
     }
-}
 
-passNoPass(grade);
+passNoPass();
 
 // function meanLanguages() {}
 

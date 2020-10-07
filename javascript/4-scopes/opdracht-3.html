@@ -8,7 +8,16 @@
 </head>
 
 <body>
-    <script></script>
+    <p>If a variable is not defined, even if it's used for the first time within a function, it will be global.</p>
+    
+    <script>
+        function printCar() {
+            carBrand = "Volvo";
+        }
+        
+        printCar();
+        console.log(carBrand);
+    </script>
 </body>
 
 </html>
