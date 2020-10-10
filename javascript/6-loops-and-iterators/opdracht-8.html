@@ -8,7 +8,29 @@
 </head>
 
 <body>
-    <script></script>
+    <script>
+        const fbnSequence = [0, 1];
+
+        for (i = 2; i < 52; i++) {
+            const newFbnNumber = fbnSequence[i - 1] + fbnSequence[i - 2];
+
+            if (i > 1) {
+                fbnSequence.push(newFbnNumber);
+                console.log(fbnSequence);
+            }
+        }
+
+        // Halil's solution:
+        
+        // let a = 0;
+        // let b = 1;
+        // for (i = 0; i < 50; i++) {
+        //     let c = a + b;
+        //     console.log(c);
+        //     a = b;
+        //     b = c;
+        // }
+    </script>
 </body>
 
 </html>

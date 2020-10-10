@@ -8,7 +8,36 @@
 </head>
 
 <body>
-    <script></script>
+    <script>
+        let i = 0;
+        const num = [2, 7, 5, 10, 4, 9, 3, 1, 8, 6];
+        const leftNumber = num[i];
+        const rightNumber = num[i + 1];
+
+        while (i < 9) {
+            if (leftNumber < rightNumber) {
+                i++;
+                continue;
+            } else {
+                num.splice(i + 2, 0, num[i]);
+                num.splice(i, 1);
+                i++;
+            }
+        }
+        console.log(num);
+
+        // else {
+        //         i++;
+
+        //         if (leftNumber > rightNumber) {
+        //             num.splice(i + 2, 0, num[i]);
+        //             num.splice(i, 1);
+        //         }
+
+        // num.splice(i + 2, 0, num[i]); // copy number to second next position
+        //         num.splice(i, 1); // remove source number
+    </script>
 </body>
 
 </html>
+if (rightNumber > leftNumber)
